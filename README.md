@@ -25,7 +25,6 @@ An app that identifies indoor plants and tracks their watering, potting, and sun
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
 * User will be able to create a rootify account
 * User will be able to login
 * User will be able to see detailed plant pages with information on the plant
@@ -34,8 +33,6 @@ An app that identifies indoor plants and tracks their watering, potting, and sun
 * User will get notifications reminding them to water plants in their plant collection
 * User will be able to use their camera to automatically add a plant to their plant collection
 * User will be able to add plant watering reminders
-* 
-* ...
 
 **Optional Nice-to-have Stories**
 
