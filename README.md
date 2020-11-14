@@ -11,7 +11,6 @@
 An app that identifies indoor plants and tracks their watering, potting, and sunlight cycles.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Home & Garden
 - **Mobile:** OCR API (Camera), Real time reminders. This app would be primarily developed for mobile usage, but is viable for usage with limited functionality on a computer. 
 - **Story:** The app analyzes users' plant needs and routine. Users can add their plants through a OCR API that recognizes the type of plant to add to their library. It keep tracks of watering schedules and reminds users of care cycles to maximize plant life.
@@ -67,7 +66,6 @@ An app that identifies indoor plants and tracks their watering, potting, and sun
 **Flow Navigation** (Screen to Screen)
 
 * Launch screen with logo
-   * [list screen navigation here]
    * Main screen with upcoming watering dates and reminders
    * Add Plant Screen
        * Add your own plant or scan a plant
