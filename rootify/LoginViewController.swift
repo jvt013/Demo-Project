@@ -13,9 +13,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func onSignIn(_ sender: Any) {
+        performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     @IBAction func onSignUp(_ sender: Any) {
+        performSegue(withIdentifier: "loginSegue", sender: nil)
     }
     
     
