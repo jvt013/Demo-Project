@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4348CE602574A29A002F82E8 /* PlantViewController.swift */; };
+		4348CE692574BCD0002F82E8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4348CE682574BCD0002F82E8 /* CameraViewController.swift */; };
 		5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6364256CAD0300CBC378 /* AppDelegate.swift */; };
 		5C0E6367256CAD0300CBC378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6366256CAD0300CBC378 /* SceneDelegate.swift */; };
 		5C0E6369256CAD0300CBC378 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6368256CAD0300CBC378 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4348CE602574A29A002F82E8 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
+		4348CE682574BCD0002F82E8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5C0E6361256CAD0300CBC378 /* rootify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rootify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0E6364256CAD0300CBC378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0E6366256CAD0300CBC378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				5C0E6364256CAD0300CBC378 /* AppDelegate.swift */,
 				5C0E6366256CAD0300CBC378 /* SceneDelegate.swift */,
 				5C0E6368256CAD0300CBC378 /* ViewController.swift */,
+				4348CE602574A29A002F82E8 /* PlantViewController.swift */,
+				4348CE682574BCD0002F82E8 /* CameraViewController.swift */,
 				5C0E636A256CAD0300CBC378 /* Main.storyboard */,
 				5C0E636D256CAD0D00CBC378 /* Assets.xcassets */,
 				5C0E636F256CAD0D00CBC378 /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0E6369256CAD0300CBC378 /* ViewController.swift in Sources */,
+				4348CE692574BCD0002F82E8 /* CameraViewController.swift in Sources */,
 				5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */,
+				4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */,
 				5C0E6367256CAD0300CBC378 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
