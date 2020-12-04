@@ -17,6 +17,7 @@
 		5C0E6387256CAD0E00CBC378 /* rootifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6386256CAD0E00CBC378 /* rootifyUITests.swift */; };
 		5CDF3B032575C3F800D7520E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF3B022575C3F800D7520E /* LoginViewController.swift */; };
 		5CDF3B052575F36000D7520E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF3B042575F36000D7520E /* HomeViewController.swift */; };
+		BCDB60B1257AF19800E54EEA /* CustomPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		5C0E6388256CAD0E00CBC378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CDF3B022575C3F800D7520E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CDF3B042575F36000D7520E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlantViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				5C0E6372256CAD0D00CBC378 /* Info.plist */,
 				5CDF3B022575C3F800D7520E /* LoginViewController.swift */,
 				5CDF3B042575F36000D7520E /* HomeViewController.swift */,
+				BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */,
 			);
 			path = rootify;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDF3B052575F36000D7520E /* HomeViewController.swift in Sources */,
+				BCDB60B1257AF19800E54EEA /* CustomPlantViewController.swift in Sources */,
 				5CDF3B032575C3F800D7520E /* LoginViewController.swift in Sources */,
 				5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */,
 				4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */,
