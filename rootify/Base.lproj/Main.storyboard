@@ -41,7 +41,7 @@
                                 <rect key="frame" x="63" y="439" width="268" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTK-eP-saS">
                                 <rect key="frame" x="63" y="574" width="64" height="30"/>
@@ -74,6 +74,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Eip-ES-rKy" id="d8q-8t-hNh"/>
                         <outlet property="usernameField" destination="WCB-jJ-Hgd" id="dOE-T1-SGB"/>
+                        <segue destination="077-ZH-hky" kind="presentation" identifier="loginSegue" id="yBM-r8-n9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,15 +86,15 @@
             <objects>
                 <viewController id="sgp-En-DNU" customClass="HomeViewController" customModule="rootify" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0pn-aK-fS4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQT-Jz-dTe">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem title="Home" id="icU-de-jO6"/>
+                                    <tabBarItem title="Home" image="house" catalog="system" id="icU-de-jO6"/>
                                     <tabBarItem title="Add Plant" image="plus" catalog="system" id="aST-Pq-JOd"/>
                                     <tabBarItem title="Plant Diary" image="doc.text" catalog="system" id="kUv-PZ-8xl"/>
                                 </items>
@@ -124,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-Py-gCW">
-                                <rect key="frame" x="85" y="511" width="32" height="33"/>
+                                <rect key="frame" x="64" y="510" width="32" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.5306882262" green="0.67003858090000001" blue="0.49903655050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -207,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cb-ym-Mgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2450.7246376811595" y="53.571428571428569"/>
+            <point key="canvasLocation" x="1048" y="-453"/>
         </scene>
         <!--Custom Plant View Controller-->
         <scene sceneID="pzc-tz-orF">
@@ -307,7 +308,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgQ-Bk-HiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="54"/>
+            <point key="canvasLocation" x="335" y="-453"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hy8-b8-Zay">
@@ -315,7 +316,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="077-ZH-hky" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6k9-VE-2OS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -348,6 +349,7 @@
     </scenes>
     <resources>
         <image name="doc.text" catalog="system" width="115" height="128"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="josefin-WS5yjFjycNY-unsplash" width="4765" height="3177"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
