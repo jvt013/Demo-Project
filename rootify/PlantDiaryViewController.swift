@@ -1,26 +1,14 @@
 //
-//  LoginViewController.swift
+//  PlantDiaryViewController.swift
 //  rootify
 //
-//  Created by Litza Mendez on 11/30/20.
+//  Created by Jae Hoon Han on 12/4/20.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class PlantDiaryViewController: UIViewController {
 
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
-    @IBAction func onSignIn(_ sender: Any) {
-        //performSegue(withIdentifier: "loginSegue", sender: nil)
-    }
-    
-    @IBAction func onSignUp(_ sender: Any) {
-        //performSegue(withIdentifier: "loginSegue", sender: nil)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
