@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -160,7 +160,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9k-kZ-uBG">
-                                <rect key="frame" x="172" y="597" width="70" height="41"/>
+                                <rect key="frame" x="172" y="597" width="70" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92690412639999997" green="1" blue="0.8980392157" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -169,6 +169,7 @@
                                 </state>
                                 <connections>
                                     <action selector="scanButton:" destination="eEV-tr-tAr" eventType="touchUpInside" id="zwu-mT-tzG"/>
+                                    <segue destination="Uwi-jI-XS5" kind="presentation" id="Cjn-Ij-Lmz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cb-ym-Mgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174" y="260"/>
+            <point key="canvasLocation" x="173.91304347826087" y="259.82142857142856"/>
         </scene>
         <!--Custom Plant View Controller-->
         <scene sceneID="pzc-tz-orF">
@@ -346,6 +347,33 @@
             </objects>
             <point key="canvasLocation" x="-717" y="-438"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Dvx-e8-6K7">
+            <objects>
+                <viewController id="Uwi-jI-XS5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TuL-Jl-sEo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZgM-Pr-xKJ">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="664"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1Gs-mx-QRU" appends="YES" id="lcg-kK-BNY"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OVx-48-Z5y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSh-Ik-IS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1Gs-mx-QRU"/>
+            </objects>
+            <point key="canvasLocation" x="-243.47826086956525" y="1038.6160714285713"/>
+        </scene>
         <!--Custom Plant Navigation Controller-->
         <scene sceneID="c50-f7-8Vi">
             <objects>
@@ -385,6 +413,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="josefin-WS5yjFjycNY-unsplash" width="4765" height="3177"/>
         <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>

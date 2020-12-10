@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1A319EFD276F877291B448 /* Pods_rootify_rootifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF00B723D31026454AE5143 /* Pods_rootify_rootifyUITests.framework */; };
 		4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4348CE602574A29A002F82E8 /* PlantViewController.swift */; };
 		5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6364256CAD0300CBC378 /* AppDelegate.swift */; };
 		5C0E6367256CAD0300CBC378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0E6366256CAD0300CBC378 /* SceneDelegate.swift */; };
@@ -19,6 +20,8 @@
 		5CDF3B052575F36000D7520E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF3B042575F36000D7520E /* HomeViewController.swift */; };
 		BCDB60B1257AF19800E54EEA /* CustomPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */; };
 		BCF53729257B319D00023B7D /* PlantDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */; };
+		C5AC4832EA41B375248A719E /* Pods_rootifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA56B87934B97FB6F14E7FA /* Pods_rootifyTests.framework */; };
+		EBE456BD83FF7002134BF2B4 /* Pods_rootify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6090F830F6FC7BE64C2BC246 /* Pods_rootify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12251EF09656BA71FBFCD249 /* Pods-rootify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify.release.xcconfig"; path = "Target Support Files/Pods-rootify/Pods-rootify.release.xcconfig"; sourceTree = "<group>"; };
+		3DA56B87934B97FB6F14E7FA /* Pods_rootifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rootifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4348CE602574A29A002F82E8 /* PlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewController.swift; sourceTree = "<group>"; };
 		4348CE682574BCD0002F82E8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		4D02100D32AEB01F28393F77 /* Pods-rootifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootifyTests.debug.xcconfig"; path = "Target Support Files/Pods-rootifyTests/Pods-rootifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		586B903DA9A3D937C163584A /* Pods-rootify-rootifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify-rootifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C0E6361256CAD0300CBC378 /* rootify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rootify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0E6364256CAD0300CBC378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C0E6366256CAD0300CBC378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +63,13 @@
 		5C0E6388256CAD0E00CBC378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CDF3B022575C3F800D7520E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CDF3B042575F36000D7520E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6090F830F6FC7BE64C2BC246 /* Pods_rootify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rootify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C0CF436CF76C641261052F4 /* Pods-rootify-rootifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify-rootifyUITests.release.xcconfig"; path = "Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9AF00B723D31026454AE5143 /* Pods_rootify_rootifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rootify_rootifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlantViewController.swift; sourceTree = "<group>"; };
 		BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDiaryViewController.swift; sourceTree = "<group>"; };
+		FB2C96B437EBCEAC45399C38 /* Pods-rootify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify.debug.xcconfig"; path = "Target Support Files/Pods-rootify/Pods-rootify.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD9D3D11B578EA162486CAA /* Pods-rootifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootifyTests.release.xcconfig"; path = "Target Support Files/Pods-rootifyTests/Pods-rootifyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE456BD83FF7002134BF2B4 /* Pods_rootify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AC4832EA41B375248A719E /* Pods_rootifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +93,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1A319EFD276F877291B448 /* Pods_rootify_rootifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50A6CFA81E2E572A386DDD1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6090F830F6FC7BE64C2BC246 /* Pods_rootify.framework */,
+				9AF00B723D31026454AE5143 /* Pods_rootify_rootifyUITests.framework */,
+				3DA56B87934B97FB6F14E7FA /* Pods_rootifyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5C0E6358256CAD0300CBC378 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +117,8 @@
 				5C0E637A256CAD0D00CBC378 /* rootifyTests */,
 				5C0E6385256CAD0E00CBC378 /* rootifyUITests */,
 				5C0E6362256CAD0300CBC378 /* Products */,
+				D41219B4D241CAAB9BB37856 /* Pods */,
+				50A6CFA81E2E572A386DDD1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +169,20 @@
 			path = rootifyUITests;
 			sourceTree = "<group>";
 		};
+		D41219B4D241CAAB9BB37856 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB2C96B437EBCEAC45399C38 /* Pods-rootify.debug.xcconfig */,
+				12251EF09656BA71FBFCD249 /* Pods-rootify.release.xcconfig */,
+				586B903DA9A3D937C163584A /* Pods-rootify-rootifyUITests.debug.xcconfig */,
+				7C0CF436CF76C641261052F4 /* Pods-rootify-rootifyUITests.release.xcconfig */,
+				4D02100D32AEB01F28393F77 /* Pods-rootifyTests.debug.xcconfig */,
+				FFD9D3D11B578EA162486CAA /* Pods-rootifyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C0E638B256CAD0E00CBC378 /* Build configuration list for PBXNativeTarget "rootify" */;
 			buildPhases = (
+				A78803CC3E4FB968EDDC412F /* [CP] Check Pods Manifest.lock */,
 				5C0E635D256CAD0300CBC378 /* Sources */,
 				5C0E635E256CAD0300CBC378 /* Frameworks */,
 				5C0E635F256CAD0300CBC378 /* Resources */,
+				45ED33CCD580AE9F29C37750 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C0E638E256CAD0E00CBC378 /* Build configuration list for PBXNativeTarget "rootifyTests" */;
 			buildPhases = (
+				97ADF561CB99AF39D6886943 /* [CP] Check Pods Manifest.lock */,
 				5C0E6373256CAD0D00CBC378 /* Sources */,
 				5C0E6374256CAD0D00CBC378 /* Frameworks */,
 				5C0E6375256CAD0D00CBC378 /* Resources */,
@@ -184,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C0E6391256CAD0E00CBC378 /* Build configuration list for PBXNativeTarget "rootifyUITests" */;
 			buildPhases = (
+				76E6693191B43207A0BECF57 /* [CP] Check Pods Manifest.lock */,
 				5C0E637E256CAD0E00CBC378 /* Sources */,
 				5C0E637F256CAD0E00CBC378 /* Frameworks */,
 				5C0E6380256CAD0E00CBC378 /* Resources */,
+				42EF93B94AF4029894383380 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +312,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42EF93B94AF4029894383380 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45ED33CCD580AE9F29C37750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rootify/Pods-rootify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rootify/Pods-rootify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rootify/Pods-rootify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E6693191B43207A0BECF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rootify-rootifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97ADF561CB99AF39D6886943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rootifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A78803CC3E4FB968EDDC412F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rootify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5C0E635D256CAD0300CBC378 /* Sources */ = {
@@ -449,6 +598,7 @@
 		};
 		5C0E638C256CAD0E00CBC378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2C96B437EBCEAC45399C38 /* Pods-rootify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +616,7 @@
 		};
 		5C0E638D256CAD0E00CBC378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12251EF09656BA71FBFCD249 /* Pods-rootify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +634,7 @@
 		};
 		5C0E638F256CAD0E00CBC378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D02100D32AEB01F28393F77 /* Pods-rootifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +656,7 @@
 		};
 		5C0E6390256CAD0E00CBC378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD9D3D11B578EA162486CAA /* Pods-rootifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +678,7 @@
 		};
 		5C0E6392256CAD0E00CBC378 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586B903DA9A3D937C163584A /* Pods-rootify-rootifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +698,7 @@
 		};
 		5C0E6393256CAD0E00CBC378 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0CF436CF76C641261052F4 /* Pods-rootify-rootifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
