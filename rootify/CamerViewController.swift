@@ -1,14 +1,15 @@
 //
-//  CameraViewController.swift
+//  CamerViewController.swift
 //  rootify
 //
-//  Created by Fariha Mohamed on 11/29/20.
+//  Created by Fariha Mohamed on 12/11/20.
 //
 
 import UIKit
 
-class CameraViewController: UINavigationController {
+class CamerViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
