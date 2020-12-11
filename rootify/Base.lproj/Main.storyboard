@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -170,7 +169,7 @@
                                 </state>
                                 <connections>
                                     <action selector="scanButton:" destination="eEV-tr-tAr" eventType="touchUpInside" id="zwu-mT-tzG"/>
-                                    <segue destination="kLY-hC-EDC" kind="presentation" id="Cjn-Ij-Lmz"/>
+                                    <segue destination="zFW-iJ-cYM" kind="presentation" id="0Y2-cx-HJq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -348,39 +347,6 @@
             </objects>
             <point key="canvasLocation" x="-717" y="-438"/>
         </scene>
-        <!--Camer View Controller-->
-        <scene sceneID="Dvx-e8-6K7">
-            <objects>
-                <viewController id="Uwi-jI-XS5" customClass="CamerViewController" customModule="rootify" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TuL-Jl-sEo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O8R-Uf-U20">
-                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="OVx-48-Z5y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" id="IQ6-Nu-dZv">
-                        <imageReference key="selectedImage" image="smallcircle.fill.circle" catalog="system" symbolScale="large" renderingMode="original"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="gPz-7U-edn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="folder" catalog="system" id="uyb-FI-dgH"/>
-                        <barButtonItem key="rightBarButtonItem" image="trash" catalog="system" id="Cn5-he-7oW"/>
-                    </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="imageView" destination="O8R-Uf-U20" id="xcL-ZH-PJc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iSh-Ik-IS7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="999.77678571428567"/>
-        </scene>
         <!--Custom Plant Navigation Controller-->
         <scene sceneID="c50-f7-8Vi">
             <objects>
@@ -398,6 +364,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyn-vN-O5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-314" y="1000"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="cne-HI-jGS">
+            <objects>
+                <viewController id="zFW-iJ-cYM" customClass="CameraViewController" customModule="rootify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nt4-vh-EJz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a Custom Plant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivR-Y9-59U">
+                                <rect key="frame" x="35" y="61" width="247" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Io-tu-CQe">
+                                <rect key="frame" x="0.0" y="169" width="414" height="337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shx-c1-VWh">
+                                <rect key="frame" x="142" y="551" width="130" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCameraButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="4z5-RJ-VM3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6X-lS-zSJ">
+                                <rect key="frame" x="153" y="663" width="109" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open Gallery"/>
+                                <connections>
+                                    <action selector="openGalleryButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="JLo-hs-4vq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-Ss-pbM">
+                                <rect key="frame" x="359" y="28" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="openGalleryButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="Bju-pQ-R3X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GB0-aX-Uy4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3Io-tu-CQe" id="EPb-TG-pfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HV4-3E-Sal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698.55072463768124" y="971.65178571428567"/>
         </scene>
         <!--Plant Diary Navigation Controller-->
         <scene sceneID="3lH-JA-NWk">
@@ -418,34 +439,13 @@
             </objects>
             <point key="canvasLocation" x="1029" y="-439"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="GWh-b1-6nZ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kLY-hC-EDC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jwd-tc-cgQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Uwi-jI-XS5" kind="relationship" relationship="rootViewController" id="oYS-O4-Cmn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bq-8b-bmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="740.57971014492762" y="999.77678571428567"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="folder" catalog="system" width="128" height="97"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="josefin-WS5yjFjycNY-unsplash" width="4765" height="3177"/>
         <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
-        <image name="smallcircle.fill.circle" catalog="system" width="128" height="121"/>
-        <image name="trash" catalog="system" width="121" height="128"/>
         <image name="wateringCanIcon" width="512" height="512"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
