@@ -22,6 +22,8 @@
 		BCF53729257B319D00023B7D /* PlantDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */; };
 		C5AC4832EA41B375248A719E /* Pods_rootifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA56B87934B97FB6F14E7FA /* Pods_rootifyTests.framework */; };
 		DF40B1402583701E00C7FA43 /* PlantDiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40B13F2583701E00C7FA43 /* PlantDiaryCell.swift */; };
+		DF40B1422583859600C7FA43 /* reminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40B1412583859600C7FA43 /* reminderTableViewCell.swift */; };
+		DF40B146258385F700C7FA43 /* reminderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40B145258385F700C7FA43 /* reminderTableView.swift */; };
 		EBE456BD83FF7002134BF2B4 /* Pods_rootify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6090F830F6FC7BE64C2BC246 /* Pods_rootify.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlantViewController.swift; sourceTree = "<group>"; };
 		BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDiaryViewController.swift; sourceTree = "<group>"; };
 		DF40B13F2583701E00C7FA43 /* PlantDiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDiaryCell.swift; sourceTree = "<group>"; };
+		DF40B1412583859600C7FA43 /* reminderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderTableViewCell.swift; sourceTree = "<group>"; };
+		DF40B145258385F700C7FA43 /* reminderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderTableView.swift; sourceTree = "<group>"; };
 		FB2C96B437EBCEAC45399C38 /* Pods-rootify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify.debug.xcconfig"; path = "Target Support Files/Pods-rootify/Pods-rootify.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD9D3D11B578EA162486CAA /* Pods-rootifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootifyTests.release.xcconfig"; path = "Target Support Files/Pods-rootifyTests/Pods-rootifyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +151,8 @@
 				5C0E6372256CAD0D00CBC378 /* Info.plist */,
 				5CDF3B022575C3F800D7520E /* LoginViewController.swift */,
 				5CDF3B042575F36000D7520E /* HomeViewController.swift */,
+				DF40B1412583859600C7FA43 /* reminderTableViewCell.swift */,
+				DF40B145258385F700C7FA43 /* reminderTableView.swift */,
 				BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */,
 				BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */,
 				DF40B13F2583701E00C7FA43 /* PlantDiaryCell.swift */,
@@ -423,10 +429,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF40B1422583859600C7FA43 /* reminderTableViewCell.swift in Sources */,
 				5CDF3B052575F36000D7520E /* HomeViewController.swift in Sources */,
 				BCDB60B1257AF19800E54EEA /* CustomPlantViewController.swift in Sources */,
 				5CDF3B032575C3F800D7520E /* LoginViewController.swift in Sources */,
 				BCF53729257B319D00023B7D /* PlantDiaryViewController.swift in Sources */,
+				DF40B146258385F700C7FA43 /* reminderTableView.swift in Sources */,
 				5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */,
 				4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */,
 				5C0E6367256CAD0300CBC378 /* SceneDelegate.swift in Sources */,
