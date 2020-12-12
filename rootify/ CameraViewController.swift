@@ -46,7 +46,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,
             }
          task.resume() //uncomment later
 */
-    }
+   
 
     //Open Camera Button
     
@@ -75,6 +75,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,
             picker.sourceType = .camera        }
         
         present(picker, animated: true, completion: nil)
+    }
         
 //Resize Image and insert into imageView    }
     
@@ -102,5 +103,6 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     */
 
- }
+ 
+
 }
