@@ -19,14 +19,14 @@ class CustomPlantViewController: UIViewController, UIImagePickerControllerDelega
     var apiData:[String:Any]!
     
     var pickerData:[[String]] = [[String]]()
-    var waterCycleCount = ""
-    var waterCycleCalendarType = ""
-    var foodCycleCount = ""
-    var foodCycleCalendarType = ""
-    var sunlightReq = ""
+    var waterCycleCount = "1"
+    var waterCycleCalendarType = " Days"
+    var foodCycleCount = "1"
+    var foodCycleCalendarType = " Days"
+    var sunlightReq = "Dark"
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(apiData)
+        //print(apiData)
         
         waterCyclePicker.delegate = self
         waterCyclePicker.dataSource = self
@@ -140,7 +140,7 @@ class CustomPlantViewController: UIViewController, UIImagePickerControllerDelega
                 print("error!")
             }
         }
-        
+        dismiss(animated: true, completion: nil)
     }
     
     

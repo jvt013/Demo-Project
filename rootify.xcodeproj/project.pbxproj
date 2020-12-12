@@ -20,6 +20,7 @@
 		5CDF3B032575C3F800D7520E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF3B022575C3F800D7520E /* LoginViewController.swift */; };
 		5CDF3B052575F36000D7520E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF3B042575F36000D7520E /* HomeViewController.swift */; };
 		BCDB60B1257AF19800E54EEA /* CustomPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */; };
+		BCF003A42585585F00502D3B /* PlantDiaryGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF003A32585585F00502D3B /* PlantDiaryGridCell.swift */; };
 		BCF53729257B319D00023B7D /* PlantDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */; };
 		C5AC4832EA41B375248A719E /* Pods_rootifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA56B87934B97FB6F14E7FA /* Pods_rootifyTests.framework */; };
 		EBE456BD83FF7002134BF2B4 /* Pods_rootify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6090F830F6FC7BE64C2BC246 /* Pods_rootify.framework */; };
@@ -68,6 +69,7 @@
 		7C0CF436CF76C641261052F4 /* Pods-rootify-rootifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify-rootifyUITests.release.xcconfig"; path = "Target Support Files/Pods-rootify-rootifyUITests/Pods-rootify-rootifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9AF00B723D31026454AE5143 /* Pods_rootify_rootifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rootify_rootifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlantViewController.swift; sourceTree = "<group>"; };
+		BCF003A32585585F00502D3B /* PlantDiaryGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDiaryGridCell.swift; sourceTree = "<group>"; };
 		BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDiaryViewController.swift; sourceTree = "<group>"; };
 		FB2C96B437EBCEAC45399C38 /* Pods-rootify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootify.debug.xcconfig"; path = "Target Support Files/Pods-rootify/Pods-rootify.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD9D3D11B578EA162486CAA /* Pods-rootifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rootifyTests.release.xcconfig"; path = "Target Support Files/Pods-rootifyTests/Pods-rootifyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,8 +148,9 @@
 				5CDF3B022575C3F800D7520E /* LoginViewController.swift */,
 				5CDF3B042575F36000D7520E /* HomeViewController.swift */,
 				BCDB60B0257AF19800E54EEA /* CustomPlantViewController.swift */,
-				BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */,
 				43D3BEC325837B7E009B4E6C /*  CameraViewController.swift */,
+				BCF53728257B319D00023B7D /* PlantDiaryViewController.swift */,
+				BCF003A32585585F00502D3B /* PlantDiaryGridCell.swift */,
 			);
 			path = rootify;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				5C0E6365256CAD0300CBC378 /* AppDelegate.swift in Sources */,
 				4348CE612574A29A002F82E8 /* PlantViewController.swift in Sources */,
 				5C0E6367256CAD0300CBC378 /* SceneDelegate.swift in Sources */,
+				BCF003A42585585F00502D3B /* PlantDiaryGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
