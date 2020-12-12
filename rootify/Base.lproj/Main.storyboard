@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zFW-iJ-cYM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -405,7 +405,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan"/>
                                 <connections>
-                                    <action selector="openGalleryButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="Bju-pQ-R3X"/>
+                                    <action selector="openGalleryButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="c2d-k2-z5p"/>
+                                    <action selector="scanButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="3RM-TZ-7wX"/>
                                 </connections>
                             </button>
                         </subviews>
