@@ -7,12 +7,28 @@
 
 import UIKit
 
-class CustomPlantViewController: UIViewController {
+class CustomPlantViewController: UIViewController, UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var plantName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onCameraButton(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            picker.sourceType = .photoLibrary
+        } else {
+            picker.sourceType = .camera        }
+        
+        present(picker, animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {

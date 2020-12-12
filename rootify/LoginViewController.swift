@@ -6,18 +6,48 @@
 //
 
 import UIKit
+import Parse
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     @IBAction func onSignIn(_ sender: Any) {
-        //performSegue(withIdentifier: "loginSegue", sender: nil)
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                print("successfully logged in")
+            } else {
+                print("Error: \(error?.localizedDescription)")
+                self.errorLabel.text = "Incorrect login info."
+            }
+        }
+        
+        
     }
     
     @IBAction func onSignUp(_ sender: Any) {
-        //performSegue(withIdentifier: "loginSegue", sender: nil)
+        let user = PFUser()
+        user.username = usernameField.text
+        user.password = passwordField.text
+        
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                print("successfully logged in")
+            } else if (self.usernameField.text == "") {
+                print("Error: \(error?.localizedDescription)")
+                self.errorLabel.text = "Missing username."
+            } else {
+                print("Error: \(error?.localizedDescription)")
+                self.errorLabel.text = "Invalid username."
+            }
+        }
     }
     
     
