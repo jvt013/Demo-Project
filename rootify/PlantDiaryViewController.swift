@@ -26,8 +26,8 @@ class PlantDiaryViewController: UIViewController, UICollectionViewDataSource, UI
         layout.minimumLineSpacing = 2
         layout.minimumInteritemSpacing = 2
         
-        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
-        layout.itemSize = CGSize(width: width, height: width * 3/2)
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 1) / 2
+        layout.itemSize = CGSize(width: width, height: width)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
