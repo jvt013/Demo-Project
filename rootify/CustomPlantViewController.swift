@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import AlamofireImage
 
-class CustomPlantViewController: UIViewController, UIImagePickerControllerDelegate {
+class CustomPlantViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var plantName: UITextField!
@@ -26,9 +27,21 @@ class CustomPlantViewController: UIViewController, UIImagePickerControllerDelega
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             picker.sourceType = .photoLibrary
         } else {
-            picker.sourceType = .camera        }
+            picker.sourceType = .camera
+        }
         
         present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af_imageAspectScaled(toFill: size)
+        
+        imageView.image = scaledImage
+        
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancel(_ sender: Any) {
