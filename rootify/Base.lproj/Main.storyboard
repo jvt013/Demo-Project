@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zFW-iJ-cYM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -45,7 +45,7 @@
                                 <rect key="frame" x="63" y="439" width="268" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-PF-XVp">
                                 <rect key="frame" x="63" y="574" width="127" height="30"/>
@@ -279,10 +279,6 @@
                                 <rect key="frame" x="69" y="390" width="276" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-cactus" translatesAutoresizingMaskIntoConstraints="NO" id="UXG-V1-4nd">
-                                <rect key="frame" x="-168" y="248" width="750" height="439"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9k-kZ-uBG">
                                 <rect key="frame" x="103" y="472" width="208" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,6 +292,10 @@
                                     <segue destination="zFW-iJ-cYM" kind="presentation" id="0Y2-cx-HJq"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-cactus" translatesAutoresizingMaskIntoConstraints="NO" id="UXG-V1-4nd">
+                                <rect key="frame" x="166" y="390" width="82" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uB2-kd-hcF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -314,7 +314,7 @@
             <objects>
                 <viewController id="cCI-sI-ea8" customClass="CustomPlantViewController" customModule="rootify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkA-Ko-uiA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addplantphotoicon" translatesAutoresizingMaskIntoConstraints="NO" id="luH-Vf-IW9">
@@ -551,8 +551,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan"/>
                                 <connections>
-                                    <action selector="openGalleryButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="c2d-k2-z5p"/>
                                     <action selector="scanButton:" destination="zFW-iJ-cYM" eventType="touchUpInside" id="3RM-TZ-7wX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJX-EM-Ia4">
+                                <rect key="frame" x="189" y="743" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="cCI-sI-ea8" kind="show" identifier="fromCameraPicker" id="Ogo-0q-eFF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -587,11 +594,14 @@
             <point key="canvasLocation" x="1029" y="-439"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ogo-0q-eFF"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Webp.net-resizeimage__1_-removebg-preview" width="120" height="120"/>
         <image name="addplantphotoicon" width="512" height="512"/>
         <image name="background-img" width="1200" height="800"/>
-        <image name="camera-cactus" width="433" height="577"/>
+        <image name="camera-cactus" width="100" height="100"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="josefin-WS5yjFjycNY-unsplash" width="4765" height="3177"/>
         <image name="login-background" width="1536" height="2048"/>

@@ -16,6 +16,7 @@ class CustomPlantViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var sunlightControl: UISegmentedControl!
     @IBOutlet weak var waterCyclePicker: UIPickerView!
     @IBOutlet weak var foodCyclePicker: UIPickerView!
+    var apiData:[String:Any]!
     
     var pickerData:[[String]] = [[String]]()
     var waterCycleCount = ""
@@ -25,6 +26,7 @@ class CustomPlantViewController: UIViewController, UIImagePickerControllerDelega
     var sunlightReq = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(apiData)
         
         waterCyclePicker.delegate = self
         waterCyclePicker.dataSource = self

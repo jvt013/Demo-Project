@@ -12,42 +12,13 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,
                            UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
-    
+    var dictionaryResponse:[String:Any] = [:]
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-  //Scan button
-    @IBAction func scanButton(_ sender: Any) {
-      //let url = URL(string:"https://api.plant.id/v2/usage_info/?api_key=Ok64FUBCOOV95IkTngjl7hxLZkVxwH7nuj4iCvPc2zBZo5GbwY&language=en-US&page=1")!
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.plant.id/v2/identify")! as URL)
-        request.addValue("Ok64FUBCOOV95IkTngjl7hxLZkVxwH7nuj4iCvPc2zBZo5GbwY", forHTTPHeaderField: "X-Auth-Token")
-        request.httpMethod = "GET" // or POST or whatever
-       // let task = URLSession.dataTaskWithRequest(<#URLRequest#>){(data, response, error) in // request anything needed during session
-        //NSURLConnection.sendAsynchronousRequest(request as URLRequest, queue: OperationQueue.main) { (response, data, error) in
-            // handle your data here
-            print("Success")
-        }
-        //let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
-      /*  let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url) { (data, response, error) in
-            // This will run when the network request returns
-               if let error = error {
-                  print(error.localizedDescription)
-               } else if let data = data {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                  print(dataDictionary)
-                  // TODO: Get the array of movies
-                  // TODO: Store the movies in a property to use elsewhere
-                  // TODO: Reload your table view data
-
-               }
-            }
-         task.resume() //uncomment later
-*/
-   
-
+  
     //Open Camera Button
     
     @IBAction func openCameraButton(_ sender: Any) {
@@ -89,9 +60,86 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate,
         
         dismiss(animated: true, completion: nil)
     }
+    //func convertImageToBase64String (img: UIImage) -> String {
+   // return img.jpegData(compressionQuality: 1)?.base64EncodedString() ?? ""
+//}
+    
+    struct ImageStruct: Codable {
+        var images: [Data] = []
+        
+        enum CodingKeys: String, CodingKey {
+            case images = "images"
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let customPlantVC = segue.destination as! CustomPlantViewController
+        customPlantVC.apiData = dictionaryResponse
+    }
+    //Scan button
+      @IBAction func scanButton(_ sender: Any) {
+        print("working")
+        let imageData:Data = imageView.image!.pngData()!
+        
+        // URL
+        let url = URL(string:
+            "https://api.plant.id/v2/identify")
+        
+        guard url != nil else {
+                print("Error creating url object")
+                return
+        }
+        
+        // URL Request
+        var request = URLRequest(url: url! , cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
+        
+        // Specify the Header
+        let header = [
+            "Content-Type": "application/json",
+            "Api-Key": "Ok64FUBCOOV95IkTngjl7hxLZkVxwH7nuj4iCvPc2zBZo5GbwY"]
+        request.allHTTPHeaderFields = header
+        
+        
+        let imageStruct = ImageStruct(images: [imageData])
+        
+        do {
+            let requestBody = try JSONEncoder().encode(imageStruct)
+//            let requestBody = try JSONSerialization.data(withJSONObject: jsonData, options: .fragmentsAllowed)
+            request.httpBody = requestBody
+        }
+        catch {
+            print("Error creating data object from JSON ")
+        }
+        
+        //Set the Request Type
+        request.httpMethod = "POST"
+        
+        //Get the URLSession
+        let session = URLSession.shared
+        
+        //Create the data task
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            //Check in
+            
+            if error == nil && data != nil {
+                //Try to parse data
+                do {
+                    let dictionary = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [String:Any]
+                    self.dictionaryResponse = dictionary!
+                    print(dictionary)
+                } catch {
+                    print("Error parsing response data")
+                }
+            }
+        }
+        
+        //Fire off the Data Task
+        dataTask.resume()
+        
+      }//end scan
         
     
-        
         
         
     /*    // MARK: - Navigation
