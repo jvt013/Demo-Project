@@ -1,0 +1,6 @@
+framework module Pods_rootify {
+  umbrella header "Pods-rootify-umbrella.h"
+
+  export *
+  module * { export * }
+}
